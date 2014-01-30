@@ -1,0 +1,8 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<%= form_tag root_path, :method => 'get' do %>
+<%= text_field_tag :roll, params[:roll] %>
+<%= submit_tag "Search", :name => nil %>
+<% end %>
+
+<%= @roll if @roll %>
